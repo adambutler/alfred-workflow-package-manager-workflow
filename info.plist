@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>io.lab.workflow</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict/>
+	<key>createdby</key>
+	<string>Adam Butler</string>
+	<key>description</key>
+	<string>An Alfred Workflow for managing Alfred Workflows</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Package Manager</string>
+	<key>objects</key>
+	<array/>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict/>
+	<key>webaddress</key>
+	<string>http://workflow.lab.io</string>
+</dict>
+</plist>
