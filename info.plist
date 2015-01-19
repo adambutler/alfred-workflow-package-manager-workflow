@@ -74,13 +74,13 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>flow</string>
+				<string>search</string>
 				<key>runningsubtext</key>
 				<string>WAIT YO</string>
 				<key>script</key>
 				<string>ruby search.rb</string>
 				<key>title</key>
-				<string>flow</string>
+				<string>search</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
