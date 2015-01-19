@@ -26,4 +26,4 @@ def download_workflow(id)
   end
 end
 
-download_workflow(1)
+download_workflow ARGV[0]

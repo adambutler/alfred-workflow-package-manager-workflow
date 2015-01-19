@@ -8,7 +8,7 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>60F5D878-C17B-4E72-9BC8-8752DC91AF88</key>
+		<key>70F719CC-7D05-4F23-8BBD-D0D317E995B3</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -33,29 +33,10 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>workflow</string>
-				<key>text</key>
-				<string>Workflow</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>60F5D878-C17B-4E72-9BC8-8752DC91AF88</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>ruby debug.rb</string>
+				<string>ruby download.rb {query}</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -99,11 +80,6 @@
 	<key>uidata</key>
 	<dict>
 		<key>225B479B-1FDD-473B-9044-AD04954FF48D</key>
-		<dict>
-			<key>ypos</key>
-			<real>80</real>
-		</dict>
-		<key>60F5D878-C17B-4E72-9BC8-8752DC91AF88</key>
 		<dict>
 			<key>ypos</key>
 			<real>80</real>
