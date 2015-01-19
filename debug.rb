@@ -1,4 +1,6 @@
+require 'rubygems'
 require 'net/http'
+require 'json'
 
 def download_workflow(id)
   begin
@@ -8,12 +10,17 @@ def download_workflow(id)
     http = Net::HTTP.new(uri.host, uri.port)
 
     # Create Request
-    req =  Net::HTTP::Get.new(uri)
+    request =  Net::HTTP::Get.new(uri)
 
     # Fetch Request
-    res = http.request(req)
-    puts "Response HTTP Status Code: #{res.code}"
-    puts "Response HTTP Response Body: #{res.body}"
+    response = http.request(request)
+
+    # Parse the response and get the git_repository_url
+    git_repository_url = JSON.parse(response.body)["git_repository_url"]
+
+    # Clone the git repository and write the output
+    puts `git clone #{git_repository_url}`
+
   rescue Exception => e
     puts "HTTP Request failed (#{e.message})"
   end
