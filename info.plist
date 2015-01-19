@@ -34,13 +34,13 @@
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>keyword</key>
 				<string>workflow</string>
 				<key>text</key>
 				<string>Workflow</string>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
@@ -66,6 +66,33 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>flow</string>
+				<key>runningsubtext</key>
+				<string>WAIT YO</string>
+				<key>script</key>
+				<string>ruby search.rb</string>
+				<key>title</key>
+				<string>flow</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>70F719CC-7D05-4F23-8BBD-D0D317E995B3</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -80,6 +107,11 @@
 		<dict>
 			<key>ypos</key>
 			<real>80</real>
+		</dict>
+		<key>70F719CC-7D05-4F23-8BBD-D0D317E995B3</key>
+		<dict>
+			<key>ypos</key>
+			<real>200</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
