@@ -18,9 +18,9 @@ def generate_xml(workflows)
   puts xml.join
 end
 
-def search(id)
+def search(query)
   begin
-    uri = URI("http://alfred-workflow-package-manager.dev/workflows.json")
+    uri = URI("http://alfred-workflow-package-manager.dev/workflows.json?query=#{query}")
 
     # Create client
     http = Net::HTTP.new(uri.host, uri.port)
@@ -42,4 +42,4 @@ def search(id)
   end
 end
 
-search("html")
+search(ARGV[0])

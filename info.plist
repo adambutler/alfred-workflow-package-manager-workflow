@@ -78,7 +78,7 @@
 				<key>runningsubtext</key>
 				<string>WAIT YO</string>
 				<key>script</key>
-				<string>ruby search.rb</string>
+				<string>ruby search.rb {query}</string>
 				<key>title</key>
 				<string>search</string>
 				<key>type</key>
