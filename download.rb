@@ -19,7 +19,7 @@ def download_workflow(id)
     git_repository_url = JSON.parse(response.body)["git_repository_url"]
 
     # Clone the git repository and write the output
-    puts `git clone #{git_repository_url}`
+    puts `cd ~/Library/Application\\ Support/Alfred\\ 2/Alfred.alfredpreferences/workflows && git clone #{git_repository_url}`
 
   rescue Exception => e
     puts "HTTP Request failed (#{e.message})"
