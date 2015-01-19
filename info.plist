@@ -7,7 +7,19 @@
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>60F5D878-C17B-4E72-9BC8-8752DC91AF88</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>225B479B-1FDD-473B-9044-AD04954FF48D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>Adam Butler</string>
 	<key>description</key>
@@ -17,11 +29,59 @@
 	<key>name</key>
 	<string>Package Manager</string>
 	<key>objects</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>workflow</string>
+				<key>text</key>
+				<string>Workflow</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>60F5D878-C17B-4E72-9BC8-8752DC91AF88</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>ruby debug.rb</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>225B479B-1FDD-473B-9044-AD04954FF48D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
-	<dict/>
+	<dict>
+		<key>225B479B-1FDD-473B-9044-AD04954FF48D</key>
+		<dict>
+			<key>ypos</key>
+			<real>80</real>
+		</dict>
+		<key>60F5D878-C17B-4E72-9BC8-8752DC91AF88</key>
+		<dict>
+			<key>ypos</key>
+			<real>80</real>
+		</dict>
+	</dict>
 	<key>webaddress</key>
 	<string>http://workflow.lab.io</string>
 </dict>
