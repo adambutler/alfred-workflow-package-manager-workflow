@@ -55,7 +55,7 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>search</string>
+				<string>flow search</string>
 				<key>runningsubtext</key>
 				<string>WAIT YO</string>
 				<key>script</key>
