@@ -57,7 +57,7 @@
 				<key>keyword</key>
 				<string>flow search</string>
 				<key>runningsubtext</key>
-				<string>WAIT YO</string>
+				<string>Loading</string>
 				<key>script</key>
 				<string>ruby search.rb {query}</string>
 				<key>title</key>
