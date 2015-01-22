@@ -27,7 +27,7 @@ end
 
 def search(query)
   begin
-    uri = URI("http://alfred-workflow-package-manager.dev/workflows.json?query=#{query}")
+    uri = URI("http://flow.lab.io/workflows.json?query=#{query}")
 
     # Create client
     http = Net::HTTP.new(uri.host, uri.port)

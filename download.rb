@@ -4,7 +4,7 @@ require 'json'
 
 def download_workflow(id)
   begin
-    uri = URI("http://alfred-workflow-package-manager.dev/workflows/#{id}.json")
+    uri = URI("http://flow.lab.io/workflows/#{id}.json")
 
     # Create client
     http = Net::HTTP.new(uri.host, uri.port)
