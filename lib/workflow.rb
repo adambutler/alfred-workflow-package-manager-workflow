@@ -1,9 +1,10 @@
 require 'net/http'
 require 'json'
+require 'sqlite3'
 
-ENV = "production"
+DEBUG = true
 
-if ENV == "development"
+if DEBUG
   HOST = "http://alfred-workflow-package-manager.dev"
   WORKFLOW_PATH = "~/Sites/alfred-workflow-package-manager-workflow/tmp"
 else
@@ -12,6 +13,7 @@ else
 end
 
 module Workflow
+  require "./lib/workflow/initialize"
   require "./lib/workflow/list"
   require "./lib/workflow/remote"
   require "./lib/workflow/git"
