@@ -26,8 +26,9 @@ module Workflow
       unless self.table_exits db, "workflows"
         self.create_table(db, "workflows")
       end
+      return db
     end
   end
 end
 
-Workflow::Initialize.create_database
+DB = Workflow::Initialize.create_database

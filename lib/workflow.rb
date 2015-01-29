@@ -37,7 +37,7 @@ module Workflow
     id = ARGV[1]
     workflow = Workflow::Remote.get(id)
     git_repository_url = workflow["git_repository_url"]
-    Workflow::Git.download git_repository_url
+    Workflow::Git.download "test", git_repository_url
   end
 end
 
