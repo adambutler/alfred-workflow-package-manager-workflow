@@ -8,6 +8,17 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
+		<key>13B24BEA-6290-49AD-BEF1-9E47BEB77A13</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F0A7D708-516D-491E-A3C2-4D9E9FC5E186</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>70F719CC-7D05-4F23-8BBD-D0D317E995B3</key>
 		<array>
 			<dict>
@@ -56,6 +67,14 @@
 				<integer>0</integer>
 				<key>keyword</key>
 				<string>flow</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Loading</string>
 				<key>script</key>
@@ -74,11 +93,68 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>ruby lib/workflow.rb remove {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F0A7D708-516D-491E-A3C2-4D9E9FC5E186</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>flow remove</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading</string>
+				<key>script</key>
+				<string>ruby lib/workflow.rb remove {query}</string>
+				<key>title</key>
+				<string>Remove Workflow</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>13B24BEA-6290-49AD-BEF1-9E47BEB77A13</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>13B24BEA-6290-49AD-BEF1-9E47BEB77A13</key>
+		<dict>
+			<key>ypos</key>
+			<real>320</real>
+		</dict>
 		<key>225B479B-1FDD-473B-9044-AD04954FF48D</key>
 		<dict>
 			<key>ypos</key>
@@ -88,6 +164,11 @@
 		<dict>
 			<key>ypos</key>
 			<real>200</real>
+		</dict>
+		<key>F0A7D708-516D-491E-A3C2-4D9E9FC5E186</key>
+		<dict>
+			<key>ypos</key>
+			<real>320</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>

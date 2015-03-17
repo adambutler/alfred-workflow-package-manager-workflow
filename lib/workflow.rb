@@ -17,6 +17,7 @@ module Workflow
   require "./lib/workflow/list"
   require "./lib/workflow/remote"
   require "./lib/workflow/git"
+  require "./lib/workflow/manage"
 
   def self.index
     workflows = Workflow::Remote.index()
@@ -39,6 +40,10 @@ module Workflow
     git_repository_url = workflow["git_repository_url"]
     Workflow::Git.download "test", git_repository_url
   end
+
+  def self.installed
+    Workflow::Manage.installed()
+  end
 end
 
 case ARGV[0]
@@ -48,7 +53,8 @@ case ARGV[0]
     else
       Workflow.search
     end
-
   when "download"
     Workflow.download
+  when "remove"
+    Workflow.installed
 end
